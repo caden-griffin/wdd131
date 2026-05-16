@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #1b4d6b;
+    color: white;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    background-color: #333;
+}
+
+nav a {
+    flex: 1;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3 ease;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: #ffeb3b;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+.card h2 {
+    background-color: #1b4d6b;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.card-content, .location-info {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.card-content p, .location-info p {
+    flex: 1;
+}
+
+hr {
+    margin: 0 1 rem;
+     border: 0;
+     border-top: 1px solid #ccc;
+}
+
+.card h3 {
+    text-align: center;
+    padding-top: 1rem
+}
+
+.card ul {
+    margin-bottom: 0.75rem;
+}
+
+.card ul li a {
+    color: #0026ca;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1b4d6b;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#lastModified {
+    color: #ffeb3b;
+    font-size: 0.9rem;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.card-content img {
+    width:200px;
+}
+
+.location-info img {
+    width: 150px;
+}
