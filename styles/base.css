@@ -33,7 +33,6 @@ nav a {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
-    transition: background-color 0.3 ease;
 }
 
 nav a:hover {
@@ -88,7 +87,7 @@ main h1 {
 }
 
 hr {
-    margin: 0 1 rem;
+    margin: 1 rem;
      border: 0;
      border-top: 1px solid #ccc;
 }
