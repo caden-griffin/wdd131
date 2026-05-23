@@ -1,13 +1,66 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #002147;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
 .navigation {
     display: none;
     flex-direction: column;
     width: 100%;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .navigation.show {
     display: flex;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.navigation li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #edf2f7;
+}
+
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
 #menu::before {
@@ -18,34 +71,21 @@
     content: "❌";
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem
-}
-
-body {
-    font-family: sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #002147; /* Deep Navy */
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-}
-
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+}
+
+main h2 {
+    text-align: center;
+    color: #002147;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
 figure {
