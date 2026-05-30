@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="WDD 131 Assignment: An informational country profile page about Iceland featuring responsive web design layouts and dynamic weather tracking data.">
+    <meta name="Author" content="Caden Griffin">
+    <title>Iceland - Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Iceland</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>  
+    </header>
+    <main>
+        <div class="hero-container">
+            <picture>
+            <source media="(min-width: 768px)" srcset="images/hero-large.webp">
+            <img src="images/hero-small.webp" alt="Scenic pictures of Iceland showing the landscape."> 
+            </picture>
+        </div>
+        <section class="data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><span>Area:</span> 103,125 km2 (39,817 sq mi)</li>
+                <li><span>Population:</span> 402,600</li>
+                <li><span>Capital:</span>Reykjavik</li>
+                <li><span>Language:</span>Icelandic</li>
+                <li><span>Currency:</span>Icelandic Króna (ISK)</li>
+            </ul>
+        </section>
+        <section class="weather-card">
+            <h2>Weather</h2>
+            <div class="weather-info">
+                <img src="images/cloud-icon.svg" alt="Cloud Icon">
+                <ul>
+                    <li><span>Temperature:</span>5 °C</li>
+                    <li><span>Conditions:</span>Mostly Cloudy</li>
+                    <li><span>Wind:</span>15 km/h</li>
+                    <li><span>Wind Chill:</span><span id="wind-chill"></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Caden Barnett Griffin | Utah, USA</p>
+        <p class="last-modified">Last Modified: <span id="last-modified-date"></span></p>
+    </footer>
+</body>
+</html>
