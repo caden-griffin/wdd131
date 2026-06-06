@@ -93,31 +93,35 @@ function displayTemples(filteredTemples) {
   });
 }
 
-document.getElementById("home").addEventListener("click", () => {
+document.getElementById("home").addEventListener("click", (e) => {
+  e.preventDefault();
   filterHeading.textContent = "Home";
   displayTemples(temples);
 });
 
-document.getElementById("old").addEventListener("click", () => {
+document.getElementById("old").addEventListener("click", (e) => {
+  e.preventDefault();
   filterHeading.textContent = "Old (Built before 1900)";
-  // Grab the year out of the dedication string
   const oldTemples = temples.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900);
   displayTemples(oldTemples);
 });
 
-document.getElementById("new").addEventListener("click", () => {
+document.getElementById("new").addEventListener("click", (e) => {
+  e.preventDefault();
   filterHeading.textContent = "New (Built after 2000)";
   const newTemples = temples.filter(t => parseInt(t.dedicated.split(",")[0]) > 2000);
   displayTemples(newTemples);
 });
 
-document.getElementById("large").addEventListener("click", () => {
+document.getElementById("large").addEventListener("click", (e) => {
+  e.preventDefault();
   filterHeading.textContent = "Large (> 90,000 sq ft)";
   const largeTemples = temples.filter(t => t.area > 90000);
   displayTemples(largeTemples);
 });
 
-document.getElementById("small").addEventListener("click", () => {
+document.getElementById("small").addEventListener("click", (e) => {
+  e.preventDefault();
   filterHeading.textContent = "Small (< 10,000 sq ft)";
   const smallTemples = temples.filter(t => t.area < 10000);
   displayTemples(smallTemples);
