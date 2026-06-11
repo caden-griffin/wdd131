@@ -1,0 +1,116 @@
+/* Color Palette System Variables */
+:root {
+    --primary-color: #2D5A27;
+    --accent-color: #D4A373;
+    --bg-color: #F4F1DE;
+    --text-color: #1F2421;
+    --white: #FFFFFF;
+}
+
+/* Base Document Reset and Typography Setup */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Heading Typography Setup */
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1, header h2 {
+    color: var(--white);
+    margin: 5px 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+section {
+    margin: 25px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #E0DBCE;
+    margin: 30px 0;
+}
+
+/* Informational Card Blocks */
+.scenario, .font-box {
+    background-color: #FAF8F2;
+    padding: 15px 20px;
+    border-left: 5px solid var(--accent-color);
+    margin: 15px 0;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Structural Data Table Styling */
+.color-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.color-table th, .color-table td {
+    border: 1px solid #E0DBCE;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.color-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Wireframe Information Setup */
+.wireframe-desc ul {
+    padding-left: 20px;
+}
+
+.wireframe-desc li {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777777;
+}
+
+/* Mobile Responsiveness Adjustment */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    main {
+        padding: 20px;
+    }
+    .color-table th, .color-table td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+}
