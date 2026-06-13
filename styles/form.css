@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #154d81;
+    --accent-color: #69d5ff;
+    --bg-page: #dcd6e0;
+    --bg-card: #f5f3f7;
+    --text-main: #000000;
+    --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+form {
+    background-color: var(--bg-card);
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+label {
+    display: block;
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+select, 
+input[type="date"], 
+textarea, 
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #a49cb0;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+fieldset {
+    border: none;
+    margin-top: 1.5rem;
+    padding: 0;
+}
+
+legend {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.rating-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+fieldset input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #f0edf2;
+    color: #000000;
+    border: 1px solid #4a4a4a;
+    padding: 0.85rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ded9e3;
+}
+
+@media (min-width: 650px) {
+    main {
+        padding: 3rem 1rem;
+    }
+
+    form {
+        max-width: 550px;
+        padding: 2.5rem;
+    }
+}

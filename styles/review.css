@@ -1,0 +1,33 @@
+.form-card-fallback {
+    background-color: var(--bg-card);
+    width: 100%;
+    max-width: 550px;
+    padding: 2.5rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.form-card-fallback h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.form-card-fallback hr {
+    border: 0;
+    height: 1px;
+    background: #a49cb0;
+    margin: 2rem 0;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
+    <meta name="description" content="A dynamic product review form for WDD 131.">
+    <meta name="author" content="Caden Barnett Griffin">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
 <body>
-    <main>
+    <header>
         <h1>Product Review</h1>
+    </header>
+    <main>
         <form action="review.html" method="get">
             
             <label for="product-select">Product Name</label>
             <select id="product-select" name="productName" required>
-                <option value="" disabled selected>Choose a Product ...</option>
+                <option value="" disabled selected>Select a Product ...</option>
             </select>
 
             <fieldset>
@@ -41,11 +45,19 @@
             <input type="date" id="install-date" name="installDate" required>
 
             <fieldset>
-                <legend>Which features did you find useful? (Check all that apply)</legend>
-                <label><input type="checkbox" name="features" value="durability"> Durability</label>
-                <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
-                <label><input type="checkbox" name="features" value="performance"> Performance</label>
-                <label><input type="checkbox" name="features" value="design"> Design</label>
+            <legend>Which features did you find useful? (Check all that apply)</legend>
+
+            <input type="checkbox" id="feature-durability" name="features" value="durability">
+            <label for="feature-durability">Durability</label>
+
+            <input type="checkbox" id="feature-ease" name="features" value="ease">
+            <label for="feature-ease">Ease of Use</label>
+
+            <input type="checkbox" id="feature-performance" name="features" value="performance">
+            <label for="feature-performance">Performance</label>
+
+            <input type="checkbox" id="feature-design" name="features" value="design">
+            <label for="feature-design">Design</label>
             </fieldset>
 
             <label for="written-review">Written Review (Optional)</label>
