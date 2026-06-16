@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit a local unlisted trail to the Utah Trail Finder community tracking directory.">
+    <meta name="author" content="Caden Griffin">
+    <title>Suggest a Trail | Utah Trail Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Utah Trail Finder</h1>
+            <nav>
+                <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="form.html" class="active">Suggest a Trail</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-wrapper">
+            <h2>Suggest a New Trail</h2>
+            <p>Help our outdoor community expand by sharing your favorite local hidden gem paths.</p>
+            
+            <form id="trail-form" action="#" method="get">
+                <div class="form-element">
+                    <label for="trail-name">Trail Name</label>
+                    <input type="text" id="trail-name" name="trailName" required placeholder="e.g., Stewart Falls">
+                </div>
+
+                <div class="form-element">
+                    <label for="trail-location">Location Region</label>
+                    <input type="text" id="trail-location" name="trailLocation" required placeholder="e.g., Provo Canyon">
+                </div>
+
+                <div class="form-element">
+                    <label for="trail-distance">Distance (Miles)</label>
+                    <input type="number" id="trail-distance" name="trailDistance" step="0.1" min="0.1" required placeholder="e.g., 3.4">
+                </div>
+
+                <div class="form-element">
+                    <label for="trail-difficulty">Difficulty Level</label>
+                    <select id="trail-difficulty" name="trailDifficulty" required>
+                        <option value="" disabled selected>Select difficulty...</option>
+                        <option value="Easy">Easy</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="form-submit-btn">Submit Trail Details</button>
+            </form>
+            <div id="form-feedback-message"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Utah Trail Finder | Caden Griffin | WDD 131</p>
+        <p><a href="references.html">Content & Image References</a></p>
+    </footer>
+</body>
+</html>

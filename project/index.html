@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore and filter local hiking paths across Utah with dynamic interactive maps and trail logs.">
+    <meta name="author" content="Caden Griffin">
+    <title>Utah Trail Finder | Explore Local Hikes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Utah Trail Finder</h1>
+            <nav>
+                <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="references.html" class="active">Home</a></li>
+                    <li><a href="form.html">Suggest a Trail</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="layout-wrapper">
+            <aside class="filter-sidebar">
+                <h3>Filter Trails</h3>
+                <div class="filter-group">
+                    <p>Difficulty Level</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="difficulty" value="all" checked> All Levels</label>
+                        <label><input type="radio" name="difficulty" value="Easy"> Easy</label>
+                        <label><input type="radio" name="difficulty" value="Moderate"> Moderate</label>
+                        <label><input type="radio" name="difficulty" value="Hard"> Hard</label>
+                    </div>
+                </div>
+                <div class="stats-panel">
+                    <h4>Your Activity Tracker</h4>
+                    <p>Total Trails Viewed: <span id="view-count">0</span></p>
+                </div>
+            </aside>
+
+            <section class="trail-directory">
+                <h2>Available Utah Trails</h2>
+                <div id="trail-grid" class="trail-grid"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Utah Trail Finder | Caden Griffin | WDD 131</p>
+        <p><a href="references.html">Content & Image References</a></p>
+    </footer>
+</body>
+</html>
