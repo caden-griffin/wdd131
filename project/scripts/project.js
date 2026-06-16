@@ -4,7 +4,7 @@ const trails = [
         location: "Big Cottonwood Canyon",
         distance: 3.5,
         difficulty: "Easy",
-        image: "https://picsum.photos/id/1015/600/400"
+        image: "images/donut-falls.jpg"
     },
     {
         name: "Mount Timpanogos Trail",
@@ -59,7 +59,6 @@ function initNavigation() {
 
 function initDirectory() {
     const grid = document.getElementById("trail-grid");
-    const radioButtons = document.querySelectorAll("input[name='difficulty']");
     
     updateViewsCounter();
     renderTrails(trails, grid);

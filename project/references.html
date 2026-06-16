@@ -2,18 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asset citations and external text context references for the Utah Trail Finder documentation resource.">
+    <meta name="author" content="Caden Griffin">
     <title>References | Utah Trail Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/project.js" defer></script>
 </head>
 <body>
-    <h1>Project Asset References</h1>
-    <p>This page cites the external sources utilized for images, graphic assets, and technical descriptive content text blocks across this application architecture.</p>
-    
-    <ul>
-        <li>Trail information data patterns and regional mapping scopes acquired from standard regional tracking portals.</li>
-        <li>Visual representation image layouts and placeholder assets utilized via distributed open-source photography repositories.</li>
-        <li>Layout framework conceptual wireframes structural references generated independently for planning criteria objectives.</li>
-    </ul>
+    <header>
+        <div class="header-container">
+            <h1>Utah Trail Finder</h1>
+            <nav>
+                <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="form.html">Suggest a Trail</a></li>
+                    <li><a href="references.html" class="active">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <p><a href="index.html">Return to Home Directory Page</a></p>
+        <main>
+                <div class="form-wrapper">
+                    <h2>Project Asset References</h2>
+                    <p>This page cites the external sources utilized for images, graphic assets, and data content across this application.</p>
+                    
+                    <h3>Trail Data & Content</h3>
+                    <ul>
+                        <li>Trail details, distances, and difficulty ratings for Donut Falls, Mount Timpanogos, Stewart Falls, Cecret Lake, and Bell Canyon were sourced from local trail guides on <a href="https://www.alltrails.com" target="_blank">AllTrails</a>.</li>
+                    </ul>
+
+                    <h3 style="margin-top: 1.5rem;">Images & Visuals</h3>
+                    <ul>
+                        <li>The local image asset for <em>Donut Falls</em> (`donut-falls.jpg`) was sourced from user-submitted photography commons.</li>
+                        <li>All other dynamic placeholder trail card images are loaded programmatically via the <a href="https://picsum.photos" target="_blank">Lorem Picsum</a> photos API platform.</li>
+                        <li>Typography styles and iconography structures are delivered via <a href="https://fonts.google.com" target="_blank">Google Fonts (Montserrat & Open Sans)</a>.</li>
+                    </ul>
+                </div>
+        </main>
+
+    <footer>
+        <p>&copy; 2026 | Utah Trail Finder | Caden Griffin | WDD 131</p>
+        <p><a href="references.html">Content & Image References</a></p>
+    </footer>
 </body>
 </html>
